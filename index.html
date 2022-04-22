@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todo.js"></script>
+    <title>Todo List</title>
+</head>
+<body>
+
+    <div class="todo">
+        <div class="header">
+            <h2>Ola</h2>
+            <span>&#x25BC;</span>
+        </div>
+        <div class="description" show="false">
+            <p>Descrip</p>
+        </div>
+    </div>
+
+    <style>
+        .header h2{
+            display: inline;
+        }
+
+        .header span{
+            font-size: 20px;
+            cursor:pointer;
+        }
+        .description{
+            display: none;
+        }
+    </style>
+
+    <script>
+        let arrow = document.querySelector(".header span")
+        arrow.addEventListener("click",toggleDescription)
+
+        function toggleDescription(){
+            let des = document.querySelector(".description")
+            if(des.getAttribute("show")==="false"){
+                des.setAttribute("style","display:block")
+                des.setAttribute("show","true")
+            }
+            else{
+                des.setAttribute("style","display:none")
+                des.setAttribute("show","false")
+            } 
+        }
+    </script>
+</body>
+</html>
