@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Todo List</h1>
+            <div id="add-item"">
+                <a href="#">+</a>
+            </div>
+        </header>
+        <main id="list">
+            <todo-item></todo-item>
+        </main>
+    </div>
+</body>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background: #f0f0f0;
+    }
+
+    #app{
+        background: #fff;
+        margin: 35px;
+    }
+    #app header{
+        display: flex;
+        justify-content: space-between;
+        padding: 35px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+</style>
+<script src="todo.js"></script>
+</html>
